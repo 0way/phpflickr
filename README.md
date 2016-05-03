@@ -6,6 +6,8 @@ https://www.flickr.com/services/api/auth.oauth.html
 
 ![alt tag](https://raw.githubusercontent.com/0way/phpflickr/master/hinh_mieuta.png)
 
+https://raw.githubusercontent.com/0way/phpflickr/master/xac%20nhan%20login.png
+
 List Class and funtion important in  phpFlickr.php
 
 
