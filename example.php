@@ -15,16 +15,19 @@
 
 require_once("phpFlickr.php");
 $f = new phpFlickr("<api key>");
+//$f->auth("read");
 
 $recent = $f->photos_getRecent();
+//var_dump($recent['photos']);die;
 
-foreach ($recent['photo'] as $photo) {
-    $owner = $f->people_getInfo($photo['owner']);
+
+foreach ($recent['photos']['photo'] as $photo) {
+    //$owner = $f->people_getInfo($photo['owner']);
     echo "<a href='http://www.flickr.com/photos/" . $photo['owner'] . "/" . $photo['id'] . "/'>";
     echo $photo['title'];
     echo "</a> Owner: ";
     echo "<a href='http://www.flickr.com/people/" . $photo['owner'] . "/'>";
-    echo $owner['username'];
+    //echo $owner['username']['_content'];
     echo "</a><br>";
 }
 ?>
